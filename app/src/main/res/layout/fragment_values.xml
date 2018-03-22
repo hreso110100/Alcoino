@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sk.alcoino.android.alcoino.ValuesFragment">
+
+    <TextView
+        android:id="@+id/gender_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/gender"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/gender_text">
+
+        <TextView
+            android:id="@+id/male_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:padding="16dp"
+            android:text="@string/male"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/male_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBaseline="@id/male_text"
+            android:padding="16dp" />
+
+        <TextView
+            android:id="@+id/female_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/male_text"
+            android:padding="16dp"
+            android:text="@string/female"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/female_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/male_radio"
+            android:layout_alignBaseline="@id/female_text"
+            android:padding="16dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative"
+        android:padding="16dp"
+        android:text="@string/weight"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_weight">
+
+        <EditText
+            android:id="@+id/weight_input"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+
+            android:inputType="number"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/text_kg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/weight_input"
+            android:padding="16dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/kg"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:background="@color/colorAccent"
+        android:text="@string/button_send_data"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

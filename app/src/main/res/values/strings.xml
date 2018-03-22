@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Alcoino</string>
+    <string name="header_1">Paired devices</string>
+    <string name="header_2">Available devices</string>
+    <string name="search_title">Select device</string>
+    <string name="empty">Press button to find nearby devices.</string>
+    <string name="value_fragment">Sensor setup</string>
+    <string name="led_fragment">Led setup</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="button_send_data">Set data</string>
+    <string name="gender">Gender</string>
+    <string name="weight">Weight</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="kg">Kg</string>
+</resources>
